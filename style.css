@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #3d0888;
+  font-size: 1.6rem;
+}
+
+main {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.screean-wrapper {
+  background: #fff;
+  padding: 4.8rem 8.4rem;
+  width: 42.8rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.screen1, .screen2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  font-family: "DM Sans", sans-serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 1.4rem 0 2rem;
+}
+
+.card {
+  padding: 1rem;
+  background: #E4EDF1;
+  border-radius: 4px;
+  margin: 1.7rem 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card p {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.4rem;
+}
+
+button {
+  margin-top: 6.5rem;
+  background: #FF9500;
+  border-radius: 4px;
+  color: white;
+  padding: 1.6rem;
+  border: 0;
+  cursor: pointer;
+}
+
+.screen1 img:hover {
+  animation: move 0.2s forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0% {transform: translate(1px, 1px) rotate(0deg);}
+  25% {transform: translate(-1px, -2px) rotate(-1deg);}
+  50% {transform: translate(-2px, 0px) rotate(1deg);}
+  75% {transform: translate(2px, 2px) rotate(0deg);}
+  100% {transform: translate(1px, -1px) rotate(1deg);}
+}
+
+.show {
+  animation: apear 1s forwards;
+}
+
+@keyframes apear {
+  0% {
+    transform: translateY(100px) scale(.2);
+  }
+}
